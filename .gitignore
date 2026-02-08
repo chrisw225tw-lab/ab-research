@@ -1,4 +1,4 @@
 *.md
 !README.md
-!2026-*_Daily_Intelligence_Report_EN.md
-!2026-*_每日情報報告.md
+!20*_Daily_Report_EN.md
+!20*_Daily_Report_CN.md
