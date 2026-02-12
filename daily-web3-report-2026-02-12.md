@@ -214,5 +214,118 @@
 
 ---
 
-*報告生成時間: 2026-02-12 15:00 HKT*
-*下次更新: 2026-02-12 16:00 HKT*
+---
+
+## 🆕 新增新聞 (18:00 HKT 更新)
+
+### 16. Coinbase 推出 AI 代理錢包 Agentic Wallets
+- **標題**: Coinbase launches Agentic Wallets for AI agents to autonomously trade and pay
+- **來源**: BlockTempo / Coinbase
+- **URL**: https://www.blocktempo.com/coinbase-agentic-wallets-ai-agent-crypto/
+- **日期**: 2026年2月12日
+- **摘要**: Coinbase 發布首款專為 AI 代理設計的錢包，允許 AI 自主交易、支付和賺取收益。該錢包整合 x402 協議，實現 AI 對 AI 的無縫交易。
+- **影響度**: 🔥 High
+- **角度**: Catalyst, Technology
+- **分類**: 🤖 AI Tools
+- **標籤**: Coinbase, AI, Wallet, DeFi
+
+### 17. Tether 目標成為全球前10大美債買家
+- **標題**: Tether targets top 10 US Treasury buyer status with $122B holdings
+- **來源**: BlockTempo
+- **URL**: https://www.blocktempo.com/tether-top-10-us-treasury-buyer-bo-hines/
+- **日期**: 2026年2月12日
+- **摘要**: Tether 的 USA 子公司目標今年成為全球前 10 大美國國債買家之一。目前持有 1220 億美元，已超越德國和以色列的國債持有量。
+- **影響度**: 🔥 High
+- **角度**: Catalyst, Market
+- **分類**: 📈 Market
+- **標籤**: Tether, USDT, Treasury
+
+### 18. zkME 獲得 Consensus Hong Kong PitchFest 冠軍
+- **標題**: zkME Technology wins $20,000 PitchFest prize at Consensus Hong Kong
+- **來源**: CoinDesk
+- **URL**: https://www.coindesk.com/business/2026/02/12/zkme-technology-wins-usd20-000-pitchfest-prize-at-consensus-hong-kong
+- **日期**: 2026年2月12日
+- **摘要**: 香港 DePin 公司 zkME Technology 在香港 Consensus 大會 PitchFest 中擊敗 11 位決賽選手，贏得 2 萬美元獎金。其身份驗證解決方案旨在將 DeFi 帶入主流市場。
+- **影響度**: ⚡ Medium
+- **角度**: Catalyst, Technology
+- **分類**: 🤖 AI Tools
+- **標籤**: AI, DeFi, Identity, Hong Kong
+
+### 19. OKX Ventures 推出 RWA 穩定幣 STBL
+- **標題**: OKX Ventures backs STBL in partnership with Hamilton Lane and Securitize
+- **來源**: CoinDesk
+- **URL**: https://www.coindesk.com/business/2026/02/12/okx-ventures-backs-stbl-in-partnership-with-hamilton-lane-and-securitize
+- **日期**: 2026年2月12日
+- **摘要**: OKX Ventures 與 Hamilton Lane 和 Securitize 合作，在 OKX 的以太坊 L2 區塊鏈 X Layer 上推出 RWA 支持的穩定幣。這標誌著機構對代幣化資產的重大採用。
+- **影響度**: 🔥 High
+- **角度**: Catalyst, Market
+- **分類**: 📈 Market
+- **標籤**: OKX, RWA, Stablecoin, Institutional
+
+### 20. Arthur Hayes：市場崩盤並無陰謀，只是槓桿清洗
+- **標題**: Arthur Hayes: No secret conspiracy behind market crash, just leverage cleansing
+- **來源**: BlockTempo
+- **URL**: https://www.blocktempo.com/arthur-hayes-derivatives-amplify-not-cause-volatility/
+- **日期**: 2026年2月12日
+- **摘要**: BitMEX 聯合創始人 Arthur Hayes 表示，比特幣近期暴跌並非陰謀所致，而是交易商對沖 IBIT（貝萊德比特幣 ETF）倉位引發。他認為槓桿清洗後市場將回歸「只漲不跌」模式。
+- **影響度**: ⚡ Medium
+- **角度**: Market, Sentiment
+- **分類**: 📈 Market
+- **標籤**: Bitcoin, Market, Arthur Hayes, ETF
+
+### 21. AI.com 域名以 7000 萬美元售予 Crypto.com
+- **標題**: AI.com domain sold to Crypto.com for $70 million - 700,000x return in 32 years
+- **來源**: BlockTempo
+- **URL**: https://www.blocktempo.com/arsyan-ismail-ai-com-domain-sold-crypto-com-70-million/
+- **日期**: 2026年2月12日
+- **摘要**: 1993 年，一名 10 歲馬來西亞男孩用母親信用卡花 100 美元買下 ai.com。32 年後，該域名以 7000 萬美元售予 Crypto.com，創下域名史上最高價紀錄。
+- **影響度**: 🧊 Low
+- **角度**: Marketing, Sentiment
+- **分類**: 📈 Market
+- **標籤**: Crypto.com, AI, Domain
+
+### 22. SBF 獄中喊冤指控拜登政府政治迫害
+- **標題**: SBF claims political persecution by Biden administration from prison
+- **來源**: BlockTempo
+- **URL**: https://www.blocktempo.com/sbf-accuses-biden-administration-political-persecution-ftx-solvency-dispute/
+- **日期**: 2026年2月12日
+- **摘要**: Sam Bankman-Fried 在獄中發布長文，聲稱 FTX 從未真正破產，自己是拜登政府「政治司法戰」的受害者，與特朗普處境相似。
+- **影響度**: ⚡ Medium
+- **角度**: Risk, Sentiment
+- **分類**: 📜 Policy
+- **標籤**: FTX, SBF, Policy, Legal
+
+### 23. 幣安 CEO 談「10/10」爆倉事件
+- **標題**: Binance CEO Richard Teng breaks down the '10/10' nightmare that rocked crypto
+- **來源**: CoinDesk
+- **URL**: https://www.coindesk.com/business/2026/02/12/binance-not-alone-in-seeing-liquidations-during-oct-10-event-binance-ceo-teng-says
+- **日期**: 2026年2月12日
+- **摘要**: 幣安 CEO Richard Teng 在香港 Consensus 大會上解釋，10/10 爆倉事件中每個加密交易所都經歷了清算。他強調需要全行業的風險管理改進。
+- **影響度**: ⚡ Medium
+- **角度**: Risk, Market
+- **分類**: 📈 Market
+- **標籤**: Binance, Market, Crypto
+
+---
+
+## 📊 更新後統計
+
+| 分類 | 數量 |
+|------|------|
+| 🎯 Animoca | 6 條 |
+| ⚔️ Competitor | 1 條 |
+| 🤖 AI Tools | 3 條 |
+| 📜 Policy | 4 條 |
+| 📈 Market | 9 條 |
+| **總計** | **23 條** |
+
+| 影響度 | 數量 |
+|--------|------|
+| 🔥 High | 8 條 |
+| ⚡ Medium | 13 條 |
+| 🧊 Low | 2 條 |
+
+---
+
+*報告生成時間: 2026-02-12 18:00 HKT*
+*下次更新: 2026-02-13 09:00 HKT*
