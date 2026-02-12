@@ -1,15 +1,10 @@
 #!/usr/bin/env node
-// add-today-news-to-notion.js - 添加今日 Web3 新聞
+// add-today-news.js - Add real collected news to Notion
 
 const https = require('https');
 
 const NOTION_TOKEN = process.env.NOTION_API_KEY || 'ntn_c20242664764w93RjoMJYOZkqZaf13CfY5XPDpLFbnF3gC';
 const DATABASE_ID = '302078a7daec80b99473c70a619c755e';
-
-if (!NOTION_TOKEN) {
-  console.error('❌ NOTION_API_KEY not set');
-  process.exit(1);
-}
 
 function getTodayDate() {
   const now = new Date();
@@ -80,80 +75,36 @@ async function addNewsRow(newsItem) {
 
 async function main() {
   const today = getTodayDate();
-  console.log(`🔄 添加 ${today} Web3 新聞到 Notion\n`);
+  console.log(`🔄 添加今日新聞到 Notion: ${today}\n`);
 
+  // Real collected news from web search
   const newsList = [
     {
-      title: "Anichess Launches 'King's Gambit' Mobile Game at Speed Chess Championship",
-      summary: "Anichess (Animoca subsidiary) debuted chess-inspired survival mobile game at Speed Chess Championship 2025 Finals in London. Event featured $250K prize pool, 5M+ viewers. Game targets $82B mobile gaming market.",
+      title: "Anichess debuts King's Gambit at Speed Chess Championship",
+      summary: "Animoca Brands subsidiary Anichess launched King's Gambit mobile game at Chess.com Speed Chess Championship 2025 Finals in London. Event featured $250K prize pool, Magnus Carlsen victory, and 5M+ viewers. Game targets $82B mobile gaming market.",
       source_url: "https://coinedition.com/anichess-debuts-kings-gambit-at-speed-chess-championship-hosted-by-chess-com/",
       category: "🎯 Animoca",
-      tags: ["Animoca", "Gaming", "Daily"],
+      tags: ["Animoca", "Gaming", "Chess", "Mobile"],
       impact: "🔥 High",
-      angle: ["Marketing", "Catalyst", "Moat"]
+      angle: ["Marketing", "Catalyst"]
     },
     {
-      title: "LayerZero Unveils 'Zero' L1 Blockchain with Wall Street Backing",
-      summary: "LayerZero announced Zero, a new Layer 1 targeting 2M TPS with backing from Citadel Securities, ARK Invest, DTCC, ICE, Google Cloud, and Tether. Cathie Wood joins advisory board.",
-      source_url: "https://decrypt.co/357706/morning-minute-layer-zero-debuts-most-impressive-blockchain-tech-upgrade-in-years",
-      category: "📈 Market",
-      tags: ["Market", "Crypto", "AI", "Daily"],
-      impact: "🔥 High",
-      angle: ["Catalyst", "Moat", "Sentiment"]
-    },
-    {
-      title: "Animoca Brands to List on Nasdaq via Reverse Merger",
-      summary: "Animoca Brands entered agreement with Nasdaq-listed Currenc Group (CURR) for reverse merger. Target valuation $1B, expected to close end of 2026. $110M revenue from Sandbox/Mocaverse.",
-      source_url: "https://finance.yahoo.com/news/animoca-brands-eyes-1-billion-160444104.html",
+      title: "Animoca Brands receives full crypto brokerage license in UAE",
+      summary: "Animoca Brands obtained full license from Dubai's VARA (Virtual Asset Regulatory Authority) to offer crypto brokerage and virtual asset investment management services. Follows in-principle approval from ADGM in Nov 2025. Part of aggressive MENA expansion strategy.",
+      source_url: "https://www.cryptopolitan.com/animoca-brands-receives-crypto-license-uae/",
       category: "🎯 Animoca",
-      tags: ["Animoca", "Moca Network", "Finance", "Daily"],
+      tags: ["Animoca", "UAE", "VARA", "License", "MENA"],
       impact: "🔥 High",
-      angle: ["Catalyst", "Marketing"]
+      angle: ["Catalyst", "Moat"]
     },
     {
-      title: "White House Crypto Bill Stalled on Stablecoin Yield Dispute",
-      summary: "Bankers demand ban on stablecoin yields in Digital Asset Market Clarity Act. No progress made despite White House pressure. Coinbase, Ripple, a16z vs Bank Policy Institute.",
-      source_url: "https://www.coindesk.com/policy/2026/02/10/crypto-s-banker-adversaries-didn-t-want-to-deal-in-latest-white-house-meeting-on-bill",
-      category: "📜 Policy",
-      tags: ["Policy", "Crypto", "Finance", "Daily"],
-      impact: "⚡ Medium",
-      angle: ["Risk", "Catalyst"]
-    },
-    {
-      title: "Robinhood Q4 Misses, Crypto Revenue Down 38% YoY",
-      summary: "Robinhood Q4 revenue $1.28B missed $1.35B expected. Crypto revenue fell 38% YoY to $221M. However, prediction market volume spiked 4x. Robinhood Chain testnet launched on Arbitrum.",
-      source_url: "https://decrypt.co/357649/robinhood-shares-slide-q4-miss-bitcoin-crypto-weakness",
+      title: "Institutions Lead RWA Growth, Panel Says at Consensus Hong Kong",
+      summary: "Panel at Consensus Hong Kong featuring Animoca Brands, Mastercard, and Robinhood discussed how institutions are driving tokenized RWA growth. Tokenized RWAs now exceed $24B led by US bonds and commodities. BlackRock COO called distributed ledgers transformative advance in finance.",
+      source_url: "https://bitcoinethereumnews.com/tech/institutions-lead-rwa-growth-panel-says-at-consensus-hong-kong/",
       category: "📈 Market",
-      tags: ["Market", "Crypto", "Daily"],
+      tags: ["RWA", "Animoca", "Mastercard", "Robinhood", "Consensus"],
       impact: "⚡ Medium",
-      angle: ["Risk", "Sentiment"]
-    },
-    {
-      title: "Goldman Sachs Discloses $2.1B Crypto Holdings",
-      summary: "Goldman Sachs disclosed holding $1.1B BTC and $1B ETH (0.33% of portfolio). Continued institutional accumulation trend.",
-      source_url: "https://decrypt.co/357706/morning-minute-layer-zero-debuts-most-impressive-blockchain-tech-upgrade-in-years",
-      category: "📈 Market",
-      tags: ["Market", "Crypto", "Finance", "Daily"],
-      impact: "🧊 Low",
-      angle: ["Sentiment"]
-    },
-    {
-      title: "Polymarket Partners with Kaito AI for Attention Markets",
-      summary: "Polymarket announced attention markets powered by Kaito AI, combining prediction markets with AI-driven attention tracking.",
-      source_url: "https://decrypt.co/357706/morning-minute-layer-zero-debuts-most-impressive-blockchain-tech-upgrade-in-years",
-      category: "🤖 AI Tools",
-      tags: ["AI", "Crypto", "Daily"],
-      impact: "⚡ Medium",
-      angle: ["Catalyst"]
-    },
-    {
-      title: "SBF Files for New Trial After Firing Attorney",
-      summary: "Sam Bankman-Fried filed pro se motion for new trial after firing lawyer, claiming new evidence. Potential path to get out of prison.",
-      source_url: "https://decrypt.co/357619/ftx-founder-sam-bankman-fried-requests-new-trial-firing-attorney",
-      category: "📜 Policy",
-      tags: ["Policy", "Crypto", "Daily"],
-      impact: "🧊 Low",
-      angle: ["Risk"]
+      angle: ["Catalyst", "Sentiment"]
     }
   ];
 
@@ -161,7 +112,7 @@ async function main() {
 
   let successCount = 0;
   let failCount = 0;
-  const addedNews = [];
+  const addedTitles = [];
 
   for (let i = 0; i < newsList.length; i++) {
     const news = newsList[i];
@@ -169,9 +120,9 @@ async function main() {
     
     try {
       const result = await addNewsRow(news);
-      console.log(`   ✅ 已添加`);
+      console.log(`   ✅ 已添加: ${result.url}`);
+      addedTitles.push(news.title);
       successCount++;
-      addedNews.push(news);
     } catch (err) {
       console.log(`   ❌ 失敗: ${err.message}`);
       failCount++;
@@ -183,11 +134,11 @@ async function main() {
   console.log(`\n🎉 完成！`);
   console.log(`   ✅ 成功: ${successCount}`);
   console.log(`   ❌ 失敗: ${failCount}`);
+  console.log(`\n📊 Notion 數據庫: https://www.notion.so/${DATABASE_ID}`);
   
-  // 輸出給 Telegram 的通知內容
-  console.log(`\n📱 Telegram 通知內容:`);
-  console.log(`已添加 ${successCount} 條新聞到 Notion:`);
-  addedNews.forEach((n, i) => console.log(`${i + 1}. ${n.title}`));
+  // Output for notification
+  console.log(`\n---NOTIFICATION---`);
+  console.log(JSON.stringify({count: successCount, titles: addedTitles}));
 }
 
 main().catch(console.error);
