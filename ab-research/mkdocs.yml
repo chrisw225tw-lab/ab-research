@@ -54,6 +54,9 @@ nav:
     - 2026-02-09: reports/2026-02-09.md
   - 🔗 資料來源: sources.md
 
+extra_javascript:
+  - javascripts/supabase-client.js
+
 extra:
   social:
     - icon: fontawesome/brands/github
