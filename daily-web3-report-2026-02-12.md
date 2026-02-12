@@ -9,6 +9,17 @@
 
 ## 🎯 Animoca Brands 相關
 
+### 🔥 NEW: Animoca Brands 獲得阿聯酋完整加密牌照
+- **標題**: Animoca Brands receives full crypto brokerage license in UAE
+- **來源**: Cryptopolitan / VARA
+- **URL**: https://www.cryptopolitan.com/animoca-brands-receives-crypto-license-uae/
+- **日期**: 2026年2月11日
+- **摘要**: Animoca Brands 獲得杜拜虛擬資產監管局 (VARA) 完整牌照，可提供加密貨幣經紀及虛擬資產投資管理服務。這是繼 2025 年 10 月原則性批准後的重要里程碑，進一步鞏固其在中東北非 (MENA) 地區的監管合規地位。
+- **影響度**: 🔥 High
+- **角度**: Catalyst, Regulatory, Moat
+- **分類**: 🎯 Animoca
+- **標籤**: Animoca, UAE, VARA, License, MENA
+
 ### 1. Animoca Brands 申請納斯達克上市
 - **標題**: Animoca Brands Files for Nasdaq Listing Via Reverse Merger
 - **來源**: CoinDesk
