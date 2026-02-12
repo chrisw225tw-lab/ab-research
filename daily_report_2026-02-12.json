@@ -1,0 +1,17 @@
+{
+  "report_date": "2026-02-12",
+  "market_data": {
+    "btc": {
+      "price": 67530.73,
+      "change_24h": -2.09,
+      "currency": "USD"
+    },
+    "eth": {
+      "price": 1958.68,
+      "change_24h": -3.14,
+      "currency": "USD"
+    },
+    "updated_at": "2026-02-12T09:00:00+08:00"
+  },
+  "content_markdown": "# 每日 Web3 市場情報 - 2026年2月12日\n\n## 📊 市場概覽\n\n| 資產 | 價格 (USD) | 24h 變化 |\n|------|-----------|----------|\n| BTC | $67,530.73 | -2.09% 📉 |\n| ETH | $1,958.68 | -3.14% 📉 |\n\n## 🔥 重點新聞\n\n### Animoca Brands 動態\n- **Anichess 發布 King's Gambit**: Animoca Brands 與 Chess.com 合作的下一代國際象棋平台 Anichess，在 Speed Chess Championship 2025 總決賽上首次亮相「King's Gambit」—— 一款以國際象棋為靈感的生存類手機遊戲，現已上架 App Store 和 Google Play。\n\n- **收購 SOMO**: Animoca Brands 於 2026 年 1 月完成對數字收藏品公司 SOMO 的收購，進一步擴展其 Web3 收藏品生態系統。\n\n### 市場動態\n- **OSL Group 推出 USDGO**: OSL Group 於 2 月 11 日正式推出受監管的企業級穩定幣 USDGO。\n\n- **L1-zkEVM 發展**: 首個 L1-zkEVM 工作坊定於 2026 年 2 月 11 日舉行，新提案將允許驗證者無需完整執行即可確認區塊，提高效率。\n\n### 機構觀點\n- Michael Saylor 的比特幣購買執行和槓桿策略持續引發市場關注。\n\n---\n*數據來源：CoinDesk, CoinMarketCap, The Block, CoinEdition*\n*報告生成時間：2026-02-12 09:00 (HKT)*"
+}

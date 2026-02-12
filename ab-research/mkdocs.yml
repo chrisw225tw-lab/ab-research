@@ -49,6 +49,7 @@ markdown_extensions:
 nav:
   - 首頁: index.md
   - 📊 每日報告:
+    - 2026-02-12 (今日): reports/2026-02-12.md
     - 2026-02-11: reports/2026-02-11.md
     - 2026-02-10: reports/2026-02-10.md
     - 2026-02-09: reports/2026-02-09.md
