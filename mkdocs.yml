@@ -1,0 +1,62 @@
+site_name: AB Research
+site_description: Animoca Brands Intelligence Reports
+site_author: Abby
+site_url: https://ab-research.vercel.app
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.suggest
+    - search.highlight
+    - navigation.top
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - 首頁: index.md
+  - 📊 每日報告:
+    - 2026-02-12 (今日): reports/2026-02-12.md
+    - 2026-02-12 Web3摘要: reports/2026-02-12_Web3_Digest.md
+    - 2026-02-11: reports/2026-02-11.md
+    - 2026-02-10: reports/2026-02-10.md
+    - 2026-02-09: reports/2026-02-09.md
+  - 🔗 資料來源: sources.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/chrisw225tw-lab/ab-research
